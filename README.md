@@ -32,7 +32,7 @@ A passionate developer skilled in both frontend and backend technologies. Experi
 - Vercel
 
 ## Contact
-Feel free to reach out via the contact form on the site or connect with me on [GitHub](https://github.com/desiree-smith) and [LinkedIn](https://linkedin.com/in/desiree-smith).
+Feel free to reach out via the contact form on the site or connect with me on [GitHub](https://github.com/DesireeParan) and [LinkedIn](https://linkedin.com/in/maria-desiree-paran).
 
 ---
 

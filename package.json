@@ -9,8 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@floating-ui/dom": "^1.7.1",
     "@fontsource/roboto": "5.2.5",
     "@mdi/font": "7.4.47",
+    "emailjs-com": "^3.2.0",
     "vue": "^3.5.13",
     "vuetify": "^3.8.1"
   },

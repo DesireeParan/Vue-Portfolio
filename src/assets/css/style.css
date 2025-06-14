@@ -1,0 +1,403 @@
+/* Global styles moved from components */
+
+/* From App.vue and Main.vue */
+.main-gradient-bg {
+  background: linear-gradient(135deg, #111 0%, #0d1a2f 100%);
+  min-height: 100vh;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* From NavBar.vue */
+.navbar-title {
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar-link {
+  color: #1976d2 !important;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar-link:hover {
+  color: #fff !important;
+  background: #1976d2 !important;
+}
+
+.v-app-bar {
+  background: transparent !important;
+  border: 2px solid #1976d2 !important;
+  backdrop-filter: blur(8px) brightness(1.2);
+  box-shadow: 0 -2px 16px 0 rgba(68, 149, 230, 0.164);
+  width: calc(100% - 32px) !important;
+  margin: 16px !important;
+  position: static !important;
+}
+
+.programmer-icon {
+  color: #1976d2 !important;
+  font-size: 2rem !important;
+  vertical-align: middle;
+}
+
+/* From AppFooter.vue */
+.social-link {
+  color: #1565c0;
+}
+
+/* Floating UI tooltip styles */
+.floating-tooltip {
+  background: #222;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+/* Animated floating shapes */
+.floating-shape {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.25;
+  pointer-events: none;
+  animation: float 8s ease-in-out infinite;
+}
+.shape1 {
+  width: 400px;
+  height: 400px;
+  opacity: 0.02;
+  background: linear-gradient(135deg, #1976d2 60%, #111 100%);
+  border-radius: 50%;
+  top: 10vh;
+  left: 5vw;
+  animation-delay: 0s;
+}
+.shape2 {
+  width: 80px;
+  height: 80px;
+   opacity: 0.12;
+  background: linear-gradient(135deg, #111 40%, #1976d2 100%);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  top: 60vh;
+  right: 10vw;
+  animation-delay: 2s;
+}
+.shape3 {
+  width: 500px;
+  height: 300px;
+   opacity: 0.02;
+  background: linear-gradient(135deg, #1976d2 80%, #111 100%);
+  border-radius: 50% 50% 40% 60% / 60% 40% 60% 40%;
+  bottom: 10vh;
+  left: 60vw;
+  animation-delay: 4s;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+}
+
+.v-img.logo-img {
+  border: 2px solid #1565c0;
+}
+
+.custom-footer {
+  position: static !important;
+  width: 100%;
+  background: transparent;
+  border-top: 2px solid #1976d2;
+  box-shadow: none;
+  z-index: 1;
+}
+
+/* Profile section styles */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  min-height: 350px;
+}
+.profile-img {
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.profile-info {
+  flex: none;
+  width: 100%;
+}
+@media (min-width: 900px) {
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Gradient button styles */
+.gradient-btn {
+  background: transparent;
+  color: #fff !important;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #1976d2 0%, #111 100%);
+  border-image-slice: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.15);
+  transition: border-image 0.2s, box-shadow 0.2s;
+}
+.gradient-btn:hover {
+  border-image: linear-gradient(90deg, #111 0%, #1976d2 100%);
+  box-shadow: 0 4px 16px rgba(25,118,210,0.25);
+}
+.primary-btn {
+  background:#1565c0 ;
+  color: #fff !important;
+  border: none;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.15);
+}
+.gradient-btn.primary-btn:hover {
+  background: linear-gradient(90deg, #111 0%, #1976d2 100%);
+  box-shadow: 0 4px 16px rgba(25,118,210,0.25);
+}
+
+/* Profile actions layout */
+.profile-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 600px) {
+  .profile-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .gradient-btn {
+    width: 100%;
+  }
+}
+
+/* Project card styles */
+.project-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+.project-card {
+  background: transparent !important;
+  border: 2px solid #0d1a2f;
+  font-family: inherit;
+  box-shadow: 0 4px 24px rgba(25,118,210,0.10);
+  transition: border-image 0.3s, box-shadow 0.2s;
+}
+.project-card:hover {
+  border-image: linear-gradient(270deg, #1976d2, #111, #1976d2, #111, #1976d2);
+  border-image-slice: 1;
+  box-shadow: 0 8px 32px rgba(25,118,210,0.18);
+}
+.project-card .v-card-title,
+.project-card .v-card-text {
+  color: #ebe6ec !important;
+}
+
+.project-role {
+  color: #90caf9 !important;
+  font-style: italic;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: #fff !important;
+  margin-bottom: 0.5rem;
+}
+.project-tool-chip {
+  border-image: linear-gradient(90deg, #1976d2 0%, #111 100%);
+  border-image-slice: 1;
+  background: transparent !important;
+  color: #1976d2 !important;
+  font-weight: 600;
+  border-radius: 2px !important;
+  padding: 0.35em 1em !important;
+  font-size: 0.97em;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.08);
+  margin: 0 0.15em 0.15em 0 !important;
+}
+
+.project-tool-chip:hover {
+  color: #fff !important;
+}
+
+.project-title {
+    font-weight: bold;
+    color: #fff !important;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/* Skills Section */
+
+.skills-section {
+  /* display: flex; */
+   margin-top: 2rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 60vh;
+  width: 100%;
+}
+
+.skills-icons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem 2rem;
+  margin-bottom: 2rem;
+}
+.skill-icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 90px;
+  margin: 0 1.2rem;
+}
+.skill-icon-box:hover {
+  background: rgba(30, 41, 51, 0.1);
+  transform: translateY(-5px);
+  transition: transform 0.2s;
+}
+.skill-icon {
+  font-size: 2.5rem;
+  color: #1976d2;
+  margin-bottom: 0.3rem;
+}
+.skill-label {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.1rem;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+/* Contact Form Styles */
+.contact-section {
+  margin-top: 2rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 60vh;
+  width: 100%;
+}
+
+.contact-form-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+.contact-form-card {
+  background: rgba(13, 26, 47, 0.92) !important;
+  border-radius: 18px !important;
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 6000px !important;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(25,118,210,0.18);
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #1976d2 0%, #111 100%);
+  border-image-slice: 1;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.contact-form .v-text-field,
+.contact-form .v-textarea {
+  margin-bottom: 1.2rem;
+}
+.contact-form .v-label {
+  color: #1976d2 !important;
+  font-weight: 500;
+}
+.contact-form .v-input__control input,
+.contact-form .v-input__control textarea {
+  color: #fff !important;
+}
+.contact-form .v-input__slot {
+  background: rgba(255,255,255,0.04) !important;
+  border-radius: 8px !important;
+}
+.contact-form .gradient-btn {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+
+.text-success {
+  color: #4caf50;
+}
+
+.text-error {
+  color: #f44336;
+}
+
+/* Modern Footer Styles */
+.modern-footer {
+  background: rgba(20, 30, 48, 0.7) !important;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 -2px 16px 0 rgba(25, 118, 210, 0.12);
+  border-top: 2px solid #1976d2;
+  min-height: 64px;
+  padding: 0 32px;
+}
+.modern-footer-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-text {
+  color: #dee4e9 !important;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+.modern-social-link {
+  transition: transform 0.2s, color 0.2s;
+  color: #90caf9 !important;
+}
+.modern-social-link:hover {
+  color: #1976d2 !important;
+  transform: scale(1.2) translateY(-2px);
+}
+
+.v-card.skill-group-card {
+  background: transparent !important;
+  border: 1px solid #052442 !important;
+  box-shadow: 0 4px 24px rgba(25,118,210,0.10);
+}
+
+

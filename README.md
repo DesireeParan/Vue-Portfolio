@@ -38,4 +38,4 @@ Feel free to reach out via the contact form on the site or connect with me on [G
 
 > Designed and developed by Maria Desiree Paran
 
-Vercel Link: http://vue-desiree-portfolio.vercel.app/
+Vercel Link: https://maria-desiree-portfolio.vercel.app/

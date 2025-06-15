@@ -2,39 +2,68 @@
 import { ref, watch } from 'vue'
 import { computePosition, offset, flip, shift } from '@floating-ui/dom'
 import emailjs from '@emailjs/browser'
+import imageBffhai from '@/assets/images/image1.png'
+import imageZN from '@/assets/images/image2.png'
+import imagePR from '@/assets/images/image3.png'
+import imageOM from '@/assets/images/image4.png'
+import imageNote from '@/assets/images/image5.png'
+import imageCRM from '@/assets/images/image6.jpg'
+
 
 export const projects = [
   {
-    title: 'Portfolio Website',
-    description: 'A personal portfolio site built with Vue and Vuetify.',
-    link: '#',
-    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80',
+    title: 'BFFHAI Sticker New & Renewal System',
+    description: 'This is a full stack web application for managing sticker renewals and new applications for BFFHAI.',
+    link: 'https://bffhai.znergee.com/',
+    image:  imageBffhai,
+    role: 'Full Stack Developer, System Administrator',
+    tools: ['Laravel', 'Blade', 'Bootstrap', 'JQuery', 'JavaScript', 'CSS'],
+    subtitle: 'Currently in Development',
+  },
+  {
+    title: 'Enterprise Znergee Website',
+    description: 'A corporate website, showcasing management employees and solutions.',
+    link: 'https://enterprise.znergee.com/',
+    image: imageZN,
     role: 'Full Stack Developer',
-    tools: ['Vue.js', 'Vuetify', 'Node.js'],
+    tools: ['Laravel', 'Blade', 'Bootstrap', 'JQuery', 'JavaScript', 'CSS'],
+    subtitle: 'Currently in Development',
   },
   {
-    title: 'E-commerce Platform',
-    description: 'Full stack e-commerce app using Node.js, Express, and MongoDB.',
-    link: '#',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80',
-    role: 'Backend Developer',
-    tools: ['Node.js', 'Express', 'MongoDB'],
+    title: 'Product Listing and Management System',
+    description: 'A mini e-commerce platform for managing product listings and inventory.',
+    link: 'https://products-listing-using-vuetify-and.vercel.app/',
+    image: imagePR,
+    role: 'Full Stack Developer',
+    tools: ['Vuetify', 'TypeScript', 'FakeStore API', 'CSS', 'Vercel'],
+    subtitle: 'Personal Project',
   },
   {
-    title: 'Blog Platform',
-    description: 'A modern blog platform with markdown support and user authentication.',
-    link: '#',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80',
+    title: 'Ordering Management System',
+    description: 'A modern ordering management system with user authentication and real-time updates.',
+    link: 'https://om.metaverzze.com/',
+    image: imageOM,
+    role: 'Full Stack Developer (Focusing on Authentication and Security Permissions)',
+    tools: ['Laravel', 'Livewire', 'Bootstrap', 'JavaScript', 'Tailwind & CSS'],
+    subtitle: 'Currently Down',
+  },
+  {
+    title: 'NotePad Demo Design',
+    description: 'A notepad application, designed to showcase a simple and pixelated UI.',
+    link: 'https://desireeparan.github.io/Notepad_ui/',
+    image: imageNote,
     role: 'Frontend Developer',
-    tools: ['Vue.js', 'Vuetify', 'Bootstrap'],
+    tools: ['HTML', 'CSS', 'JQuery'],
+    subtitle: 'Personal Mini Project',
   },
   {
-    title: 'Blog Platform',
-    description: 'A modern blog platform with markdown support and user authentication.',
+    title: 'CRM System',
+    description: 'A customer relationship management system to manage interactions with clients.',
     link: '#',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80',
-    role: 'Frontend Developer',
-    tools: ['Vue.js', 'Vuetify', 'Bootstrap'],
+    image: imageCRM,
+    role: 'Full Stack Developer',
+    tools: ['Laravel', 'ADMIN LTE', 'Bootstrap', 'ChartJS', 'JavaScript', 'CSS'],
+    subtitle: 'Personal Mini Project (Work in Progress)',
   },
 ]
 
